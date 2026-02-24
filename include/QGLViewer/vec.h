@@ -113,7 +113,8 @@ public:
 
 	// ! Copy constructor
 	// Vec(const Vec& v) : x(v.x), y(v.y), z(v.z) {}
-
+	constexpr Vec(const Vec&) = default; // Copy constructor that worked if you using C++20
+										 // kinda useless i can say but it at least clears some of warnings that can appear 	
 	/*! Equal operator. */
 	Vec& operator=(const Vec& v)
 	{
